@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Maciel Oliveira">
+
+    <!--FONTES/ICONS-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+
+    <!--Chamando o CSS / Starting the CSS-->
+    <!--link rel="stylesheet" href="style.css" type="text/css"-->
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,700;9..144,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fraunces', serif;
+}
+
+/*PRÉ-DEFINIÇÕES*/
+
+.section-p{
+    padding: 100px 0px;
+    font-size: medium;
+}
+
+/*---------------------*/
+
+/*HEADER*/
+
+header{
+    height: 100px;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;  
+    font-size: medium;  
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    font-size: medium;
+    margin: 0 12px;
+    padding: 8px 16px;
+    background-color: cadetblue;
+    color: #fff;
+    border-radius: 4px;
+}
+
+header nav ul li a:hover{
+    background-color: blue;
+}
+
+/*---------------------*/
+
+/*BANNER*/
+
+#banner{
+    width: 100%;
+    height: 80vh;
+}
+
+/*---------------------*/
+
+/*CARDS*/
+
+#cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: #cfcfcf;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33%;
+    height: 350px;
+    background-color: #fff;
+    border: 1px solid rgb(161, 161, 161);
+    margin: 0 16px;
+    padding: 0 60px;
+    border-radius: 4px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.card i span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.card p{
+    text-align: center;
+    text-align: justify;
+    padding: 20px 0;
+}
+
+.card h2{
+    text-decoration: none;
+    list-style: none;
+    margin: 0 12px;
+    padding: 8px 16px;
+    background-color: cadetblue;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 900;
+    color: white;
+}
+
+.card h2:hover{
+    background-color: blue;
+}
+
+
+/*---------------------*/
+
+/*CONTACT*/
+#contact{
+    display: flex;
+
+}
+#contact-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: auto;
+    padding: 0 80px;
+    font-size: medium;
+}
+
+#contact-left #information h2{
+    text-align: center;
+    font-size: medium;
+    padding: 28px 0;
+}
+
+#contact-left #information p{
+    text-align: center;
+    padding: 20px 0;
+}
+
+#contact-left #form form{
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+#contact-left #form form input[type="text"]{
+    margin: 10px 0;
+    padding: 10px 0;
+    font-size: 18px;
+    color: orangered;
+    width: 100%;
+}
+
+#contact-left #form form input[type="email"]{
+    margin: 10px 0;
+    padding: 10px 0;
+    font-size: 18px;
+    color: orangered;
+    width: 100%;
+}
+
+#contact-left #form form input[type="tel"]{
+    margin: 10px 0;
+    padding: 10px 0;
+    font-size: 18px;
+    color: orangered;
+    width: 100%;
+}
+
+#contact-left #form form textarea{
+    margin: 10px 0;
+    padding: 10px 0;
+    font-size: 18px;
+    color: orangered;
+    width: 100%;
+}
+
+#contact-left #form form a{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: orangered;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 12px 80px;
+    margin: 20px 0;
+}
+
+#contact-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    justify-content: center;
+    width: 40%;
+}
+
+#contact-right #map iframe{
+    margin: 20px 0;
+}
+
+#contact-right ul{
+    margin: 20px 0;
+}
+
+#contact-right ul li{
+    list-style: none;
+    margin: 20px 0;
+    padding: 20px 0;
+}
+
+/*---------------------*/
+
+/*FOOTER*/
+
+footer{
+    background-color: #cfcfcf;
+    text-align: center;
+}
+
+    <!--Fim do CSS / End of CSS-->
+</style>
+
+    <title>Responsive Test</title>
+</head>
+<body>
+    <!--Cabeçalho-->
+    <header>
+        <h2>Empresa</h2>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Serviços</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Imagem de Apresentação / Presentation Picture-->
+    <section>
+        <img id="banner" src="img/banner.jpg" alt="bannerdeentrada">
+    </section>
+    <!--Fim Imagem / End Picture-->
+
+    <!--Início Section - Quem Somos / Begin Section - Who are us-->
+    <section class="section-p">
+        <h1 align="left">Quem Somos</h1>
+        <br>
+        <div id="cards">
+            <div class="card">
+                <i><span class="material-symbols-outlined">
+                    home
+                   </span></i>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero beatae, adipisci, deserunt quisquam laboriosam reprehenderit error ipsam quaerat impedit delectus numquam a cumque quo tempora repellendus ratione hic aspernatur amet?</p>
+                <h2>Nossa meta</h2>
+            </div>
+            <div class="card">
+                <i><span class="material-symbols-outlined">
+                    fluorescent
+                    </span></i>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero beatae, adipisci, deserunt quisquam laboriosam reprehenderit error ipsam quaerat impedit delectus numquam a cumque quo tempora repellendus ratione hic aspernatur amet?</p>
+                <h2>Ideias para o futuro</h2>
+            </div>
+            <div class="card">
+                <i><span class="material-symbols-outlined">
+                    assured_workload
+                    </span></i>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero beatae, adipisci, deserunt quisquam laboriosam reprehenderit error ipsam quaerat impedit delectus numquam a cumque quo tempora repellendus ratione hic aspernatur amet?</p>
+               
+                <h2>Ética e Responsabilidade</h2>
+        </div>
+    </section>
+    <!--Fim Section - Quem Somos / End Section - Who are Us-->
+
+    <!--Início Contato / Begin Contato-->
+    <section id="contact">
+        <div id="contact-left">
+            <div id="information">
+                <h2>Sobre nós</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim corrupti ab itaque quo dolorum laudantium officia, consectetur et dolore error explicabo eligendi cumque modi accusantium ea molestiae ex, ipsum aliquam.</p>
+                <h3>
+                    <li>Rápido Atendimento </li>
+                    <li>Geração de Serviços de Qualidade</li>
+                    <li>Garantia</li>
+                    <li>Segurança no Pagamento</li>
+                    <li>Produtos e Serviços sempre com as tecnologias que há no mercado atual</li>
+                </h3>    
+                </ul>
+            </div>
+            <div id="form">
+                <form>
+                    <input type="text" name="Cliente" placeholder="Insira seu nome.">
+                    <input type="email" name="E-mail" placeholder="Insira seu e-mail.">
+                    <input type="tel" name="Phone" pattern="[0-9]({2})[0-9]{4}-[0-9]{4}" placeholder="Insira seu contato (XX) XXXX-XXXX">
+
+                    <textarea name="description" cols="30" rows="10"></textarea>
+                    <a href="#" id="btn-form">Enviar</a>
+                </form>
+            </div>
+        </div>
+        <div id="contact-right">
+            <div id="map">
+                <p>Nossa Localização</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119339.94020988082!2d-49.464757886907606!3d-20.816633801121228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bdad614c2df789%3A0x8f2fb0f070642c09!2zU8OjbyBKb3PDqSBkbyBSaW8gUHJldG8sIFNQ!5e0!3m2!1spt-BR!2sbr!4v1699462236931!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <ul>
+                <li>
+                    <i></i>
+                    <p>WhatsApp (XX) XXXX-XXXX</p>
+                </li>
+                <li>
+                    <i></i>
+                    <p>Instagram @XXXXXXXX</p>
+                </li>
+                <li>
+                    <i></i>
+                    <p>Endereço: Rua XXXXXXXXXXX, X, Bairro X - São José do Rio Preto SP/Brasil</p>
+                </li>
+                <li>
+                    <i></i>
+                    <p>E-mail: XXXX@XXXXX.com.br</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!--Final Contato / End Contato-->
+
+    <!--Início do Rodapé / Begin´s Footer-->
+    <footer>
+        <p>Desenvolvido por Maciel Oliveira &copy;</p>
+    </footer>
+    <!--Fim do Rodapé / End´s Footer-->
+
+</body>
+</html>
